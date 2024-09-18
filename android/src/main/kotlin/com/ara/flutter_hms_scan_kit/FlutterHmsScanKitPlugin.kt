@@ -98,7 +98,7 @@ class FlutterHmsScanKitPlugin : FlutterPlugin, MethodCallHandler, ActivityAware 
      * Apply for permissions.
      */
     private fun requestPermission() {
-        if (Build.VERSION.SDK_INT > Build.VERSION_CODES.S_V2) {
+        if (Build.VERSION.SDK_INT > Build.VERSION_CODES.S) {
             ActivityCompat.requestPermissions(
                 activity!!, arrayOf(
                     Manifest.permission.CAMERA,
