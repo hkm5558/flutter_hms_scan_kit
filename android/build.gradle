@@ -2,7 +2,7 @@ group 'com.ara.flutter_hms_scan_kit'
 version '1.0-SNAPSHOT'
 
 buildscript {
-    ext.kotlin_version = '1.8.22'
+    ext.kotlin_version = '1.7.10'
     repositories {
         google()
         jcenter()
@@ -33,7 +33,9 @@ apply plugin: 'com.huawei.agconnect'
 android {
     namespace "com.ara.flutter_hms_scan_kit"
     compileSdkVersion 33
-
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
     sourceSets {
         main.java.srcDirs += 'src/main/kotlin'
     }
